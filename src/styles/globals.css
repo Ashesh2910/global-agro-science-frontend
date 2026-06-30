@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root{
+    color-scheme: dark;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:auto;
+
+}
+
+body{
+
+    background:#000;
+
+    color:white;
+
+    overflow-x:hidden;
+
+    font-family:
+        Inter,
+        sans-serif;
+
+}
+
+canvas{
+
+    display:block;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
