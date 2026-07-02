@@ -1,6 +1,6 @@
 import { AppLayout } from "./app/AppLayout";
 import { GlobalProviders } from "./app/providers";
-import { Home } from "./pages/Home";
+import Home from "./pages/Home";
 
 function App() {
   return (
