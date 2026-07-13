@@ -7,15 +7,24 @@ export interface AssetDefinition {
 }
 
 export class AssetRegistry {
-  private readonly assets = new Map<string, AssetDefinition>();
 
-  constructor(
-    private readonly basePath: string,
-    private readonly totalFrames: number,
-  ) {
-    this.registerFrames();
-  }
+    private readonly assets = new Map<string, AssetDefinition>();
 
+    private readonly basePath: string;
+
+    private readonly totalFrames: number;
+
+    constructor(basePath: string, totalFrames: number) {
+
+        this.basePath = basePath;
+
+        this.totalFrames = totalFrames;
+
+        this.registerFrames();
+
+    }
+
+  
   private registerFrames() {
     for (let i = 1; i <= this.totalFrames; i++) {
       const id = `frame-${i}`;
